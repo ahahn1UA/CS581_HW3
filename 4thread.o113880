@@ -1,0 +1,41 @@
+setting asax scratch directory
+ 
+============================================================
+=====         Summary of your script job               =====
+============================================================
+  The script file is: myscript.sh
+  The time limit is 12:00:00 HH:MM:SS.
+  The target directory is: /home/ualclsd0158/CS581/HW/HW3
+  The working directory is:  /scratch-local/ualclsd0158.4thread.113880.asax-pbs1
+  The memory limit is: 1gb
+  The job will start running after: 202410091436.57
+  Job Name: 4thread
+  Queue: -q class -W group_list=classq
+  Constraints: 
+  Using  1  cores on master node  asax020.asc.edu
+  Node list:  asax020.asc.edu
+  Cores:  1
+  Command typed:
+/scripts/run_script myscript.sh     
+  Queue submit command:
+qsub -q class -W group_list=classq -j oe -N 4thread -a 202410091436.57 -r n -M ahahn1@crimson.ua.edu -l walltime=12:00:00 -l select=ncpus=1:mpiprocs=1:mem=1000mb 
+
+The following have been reloaded with a version change:
+  1) gcc/12.3.0-rwmy6jl => gcc/11.3.0-o2cd4vz
+  2) gmp/6.2.1-vio2wnh => gmp/6.2.1-sh44noy
+  3) mpc/1.3.1-4fxtftl => mpc/1.1.0-mheibzt
+  4) mpfr/4.2.0-hlmrah7 => mpfr/3.1.6-3ojkize
+  5) zstd/1.4.5 => zstd/1.4.5-44sthnv
+
+Total iterations completed: 5000
+Total time: 100.714047 seconds
+Total iterations completed: 5000
+Total time: 88.533275 seconds
+Total iterations completed: 5000
+Total time: 88.661463 seconds
+Total iterations completed: 5000
+Total time: 269.565564 seconds
+Total iterations completed: 5000
+Total time: 269.304915 seconds
+Total iterations completed: 5000
+Total time: 269.449972 seconds

@@ -1,0 +1,18 @@
+ 
+============================================================
+=====     Queued job information at submit time        =====
+============================================================
+  The submitted file is: myscript.sh
+  The time limit is 12:00:00 HH:MM:SS.
+  The target directory is: /home/ualclsd0158/CS581/HW/HW3
+  The memory limit is: 1gb
+  The job will start running after: 202410091436.57
+  Job Name: 4thread
+  Queue: -q class -W group_list=classq
+  Constraints: 
+  Command typed:
+/scripts/run_script myscript.sh     
+  Queue submit command:
+qsub -q class -W group_list=classq -j oe -N 4thread -a 202410091436.57 -r n -M ahahn1@crimson.ua.edu -l walltime=12:00:00 -l select=ncpus=1:mpiprocs=1:mem=10000mb 
+  Job number: 113880
+ 
